@@ -42,7 +42,6 @@ contract YourContract {
     if(students[studentID].hasRegistered){
       revert AlreadyRegistered();
     }
-
     students[studentID] = student(studentID, name, totalMarks, percentage, true);
   }
 
